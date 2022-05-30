@@ -1,0 +1,138 @@
+{% extends "base.html" %} {% block title %}Cadastrar{% endblock %} {% block
+content %}
+<form method="POST">
+  <h3 align="center">Cadastrar</h3>
+  <div class="form-group">
+    <label for="nome">Nome Completo</label>
+    <input
+      type="text"
+      class="form-control"
+      id="nome"
+      name="nome"
+      placeholder="Insira seu nome completo"
+    />
+  </div>
+  <div class="form-group">
+    <label for="email">E-mail</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      placeholder="Insira seu e-mail"
+    />
+  </div>
+  <div class="form-group">
+    <label for="pais">País</label>
+    <input
+      type="text"
+      class="form-control"
+      id="pais"
+      name="pais"
+      placeholder="Insira o país do seu endereço"
+    />
+  </div>
+  <div class="form-group">
+    <label for="estado">Estado</label>
+    <input
+      type="text"
+      class="form-control"
+      id="estado"
+      name="estado"
+      placeholder="Insira o estado do seu endereço"
+    />
+  </div>
+  <div class="form-group">
+    <label for="municipio">Município</label>
+    <input
+      type="text"
+      class="form-control"
+      id="municipio"
+      name="municipio"
+      placeholder="Insira o municipio do seu endereço"
+    />
+  </div>
+  <div class="form-group">
+    <label for="cep">CEP</label>
+    <input
+      type="text"
+      class="form-control"
+      id="cep"
+      name="cep"
+      placeholder="Deve conter 8 dígitos, sem traços ou pontos"
+    />
+  </div>
+  <div class="form-group">
+    <label for="rua">Rua</label>
+    <input
+      type="text"
+      class="form-control"
+      id="rua"
+      name="rua"
+      placeholder="Insira a rua do seu endereço"
+    />
+  </div>
+  <div class="form-group">
+    <label for="numero_endereco">Número</label>
+    <input
+      type="text"
+      class="form-control"
+      id="numero_endereco"
+      name="numero_endereco"
+      placeholder="Insira o número do seu endereço"
+    />
+  </div>
+  <div class="form-group">
+    <label for="complemento_endereco">Complemento</label>
+    <input
+      type="text"
+      class="form-control"
+      id="complemento_endereco"
+      name="complemento_endereco"
+      placeholder="Insira o complemento do seu endereço"
+    />
+  </div>
+  <div class="form-group">
+    <label for="cpf">CPF</label>
+    <input
+      type="text"
+      class="form-control"
+      id="cpf"
+      name="cpf"
+      placeholder="Deve conter 11 dígitos, sem traços ou pontos"
+    />
+  </div>
+  <div class="form-group">
+    <label for="pis_nit">PIS ou NIT</label>
+    <input
+      type="text"
+      class="form-control"
+      id="pis_nit"
+      name="pis_nit"
+      placeholder="Deve conter 12 dígitos, sem traços ou pontos"
+    />
+  </div>
+  <div class="form-group">
+    <label for="senha">Senha</label>
+    <input
+      type="password"
+      class="form-control"
+      id="senha"
+      name="senha"
+      placeholder="Digita sua senha (Deve contar mais de 5 caracteres)"
+    />
+  </div>
+  <div class="form-group">
+    <label for="senha2">Confirmação de senha</label>
+    <input
+      type="password"
+      class="form-control"
+      id="senha2"
+      name="senha2"
+      placeholder="Confirme a senha escolhida"
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+{% endblock %}

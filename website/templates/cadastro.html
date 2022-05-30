@@ -1,0 +1,18 @@
+{% extends "base.html" %} {% block title %}Cadastro{% endblock %} {% block content
+    %}
+    <h1 align="center">Cadastro</h1>
+    <p>Nome: {{current_user.nome}}</p>
+    <p>E-mail: {{current_user.email}}</p>
+    <p>País: {{current_user.pais}}</p>
+    <p>Estado: {{current_user.estado}}</p>
+    <p>Municipio: {{current_user.municipio}}</p>
+    <p>CEP: {{current_user.cep}}</p>
+    <p>Rua: {{current_user.rua}}</p>
+    <p>Número: {{current_user.numero_endereco}}</p>
+    <p>Complemento: {{current_user.complemento_endereco}}</p>
+    <p>CPF: {{current_user.cpf}}</p>
+    <p>PIS ou NIT: {{current_user.pis_nit}}</p>
+    <form method="POST">
+    <button type="submit" class="btn btn-primary">Deletar seus dados</button>
+    </form>
+    {% endblock %}
